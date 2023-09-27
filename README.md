@@ -1,9 +1,9 @@
-## Max - Moodle theme plugin
+## Max - Web API for saving data about cars
 <p align="center">
-    <img src="https://ibb.co/NCTq8nV" alt="Preview">
+    <img src="https://ibb.co/zrXjCcj" alt="Preview">
 </p>
 <p align="center">
-    <img src="https://img.shields.io/badge/.NET-v7.0-blue" alt=".Net v7.0">
+    <img src="https://img.shields.io/badge/.NET-v7.0-green" alt=".Net v7.0">
     <img src="https://img.shields.io/badge/Version-1.0-blue" alt="Version 1.0">
     <img src="https://img.shields.io/badge/License-MIT-orange" alt="License MIT">
 </p>
