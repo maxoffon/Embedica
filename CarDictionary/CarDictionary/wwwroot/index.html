@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <h1 class="title">CAR DICTIONARY</h1>
+    <h3 class="subtitle">Сохраните данные о вашем автомобиле здесь, и вы никогда их не забудете</h3>
+    <form class="form flex" action="">
+        <div class="form-wrap flex">
+            <div class="form-fields flex">
+                <div class="input-field flex">
+                    <label for="plateNumber">Гос. номер</label>
+                    <input aria-label="Ввод гос.номера" tabindex="1" id="plateNumber" type="text" placeholder="A000AA96" 
+                    pattern="[АВЕКМНОРСТУХавекмнорстух][0-9]{3}[АВЕКМНОРСТУХавекмнорстух]{2}[0-9]{2,3}"
+                    maxlength="9">
+                </div>
+                <div class="input-field flex">
+                    <label for="brand">Марка автомобиля</label>
+                    <input aria-label="Ввод марки автомобиля" tabindex="2" id="brand" type="text" placeholder="Lada"
+                    pattern="[A-Za-z]*">
+                </div>
+                <div class="input-field flex">
+                    <label for="color">Цвет автомобиля</label>
+                    <input aria-label="Ввод цвета автомобиля" tabindex="3" id="color" type="text" placeholder="Красный"
+                    pattern="[А-Яа-яЁё]*">
+                </div>
+                <div class="input-field flex">
+                    <label for="release-year">Год выпуска</label>
+                    <input aria-label="Ввод года выпуска автомобиля" tabindex="4" id="release-year" type="number" placeholder="2000">
+                </div>
+            </div>
+            <div class="buttons">
+                <button aria-label="Сохранить" class="btn post-btn" disabled tabindex="5">СОХРАНИТЬ</button>
+                <button aria-label="Удалить" class="btn dlt-btn" disabled tabindex="6">УДАЛИТЬ</button>
+                <img class="loading d-none" src="https://media.giphy.com/media/sSgvbe1m3n93G/giphy.gif" alt="">
+                <span class="state-notification hidden"></span>
+            </div>
+        </div>
+        <div class="statistics flex">
+            <h5>Количество записей в базе:</h5>
+            <span tabindex="7" aria-label="Количество записей в базе" class="car-count"></span>
+            <h5>Дата добавления первой записи:</h5>
+            <span tabindex="8" aria-label="Дата добавления первой записи" class="first-date"></span>
+            <h5>Дата добавления последней записи:</h5>
+            <span tabindex="9" aria-label="Дата добавления последней записи" class="last-date"></span>
+        </div>
+    </form>
+    <table cellspacing="0">
+        <thead>
+            <tr class="filter-wrap">
+                <th aria-label="Фильтр гос.номера" class="filter plateNumber-filter" tabindex="10">Гос. номер</th>
+                <th aria-label="Фильтр марки автомобиля" class="filter brand-filter" tabindex="11">Марка</th>
+                <th aria-label="Фильтр цвета автомобиля" class="filter color-filter" tabindex="12">Цвет</th>
+                <th aria-label="Фильтр года выпуска автомобиля" class="filter year-filter" tabindex="13">Год</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>
